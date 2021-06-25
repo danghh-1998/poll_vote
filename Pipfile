@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = "*"
+sqlalchemy = "*"
+alembic = "*"
+mysqlclient = "==1.4.4"
+uvicorn = "*"
+sentry-sdk = "*"
+aiomysql = "*"
+loguru = "*"
+gapoic = "*"
+
+[dev-packages]
+ipython = "*"
+ipdb = "*"
+better_exceptions = "*"
+
+[requires]
+python_version = "3.9"

@@ -1,0 +1,934 @@
+INFO     2021-06-25 10:50:05.578 request id: app - uvicorn.server:serve - Started server process [304039]
+INFO     2021-06-25 10:55:21.539 request id: app - uvicorn.server:serve - Started server process [304039]
+2021-06-25 10:59:13.841 | INFO     | main:init_resource:15 - http://localhost:8000/internal/polls/b39a47ba4cf140fc8068a12b881563f3
+2021-06-25 11:02:15.769 | INFO     | uvicorn.server:serve:65 - Started server process [306459]
+2021-06-25 11:02:15.769 | INFO     | uvicorn.server:serve:65 - Started server process [306459]
+2021-06-25 11:02:15.769 | INFO     | uvicorn.server:serve:65 - Started server process [306459]
+2021-06-25 11:02:15.770 | INFO     | uvicorn.lifespan.on:startup:45 - Waiting for application startup.
+2021-06-25 11:02:15.770 | INFO     | uvicorn.lifespan.on:startup:45 - Waiting for application startup.
+2021-06-25 11:02:15.770 | INFO     | uvicorn.lifespan.on:startup:45 - Waiting for application startup.
+2021-06-25 11:02:15.777 | INFO     | uvicorn.lifespan.on:startup:59 - Application startup complete.
+2021-06-25 11:02:15.778 | INFO     | uvicorn.lifespan.on:startup:59 - Application startup complete.
+2021-06-25 11:02:15.778 | INFO     | uvicorn.lifespan.on:startup:59 - Application startup complete.
+2021-06-25 11:02:18.190 | INFO     | uvicorn.server:shutdown:242 - Shutting down
+2021-06-25 11:02:18.191 | INFO     | uvicorn.server:shutdown:242 - Shutting down
+2021-06-25 11:02:18.192 | INFO     | uvicorn.server:shutdown:242 - Shutting down
+2021-06-25 11:02:18.293 | INFO     | uvicorn.lifespan.on:shutdown:64 - Waiting for application shutdown.
+2021-06-25 11:02:18.295 | INFO     | uvicorn.lifespan.on:shutdown:64 - Waiting for application shutdown.
+2021-06-25 11:02:18.295 | INFO     | uvicorn.lifespan.on:shutdown:64 - Waiting for application shutdown.
+2021-06-25 11:02:18.297 | INFO     | uvicorn.lifespan.on:shutdown:75 - Application shutdown complete.
+2021-06-25 11:02:18.298 | INFO     | uvicorn.lifespan.on:shutdown:75 - Application shutdown complete.
+2021-06-25 11:02:18.299 | INFO     | uvicorn.lifespan.on:shutdown:75 - Application shutdown complete.
+2021-06-25 11:02:18.299 | INFO     | uvicorn.server:serve:75 - Finished server process [306459]
+2021-06-25 11:02:18.299 | INFO     | uvicorn.server:serve:75 - Finished server process [306459]
+2021-06-25 11:02:18.299 | INFO     | uvicorn.server:serve:75 - Finished server process [306459]
+2021-06-25 11:02:19.476 | INFO     | uvicorn.server:serve:65 - Started server process [306471]
+2021-06-25 11:02:19.476 | INFO     | uvicorn.server:serve:65 - Started server process [306471]
+2021-06-25 11:02:19.477 | INFO     | uvicorn.server:serve:65 - Started server process [306471]
+2021-06-25 11:02:19.477 | INFO     | uvicorn.lifespan.on:startup:45 - Waiting for application startup.
+2021-06-25 11:02:19.477 | INFO     | uvicorn.lifespan.on:startup:45 - Waiting for application startup.
+2021-06-25 11:02:19.477 | INFO     | uvicorn.lifespan.on:startup:45 - Waiting for application startup.
+2021-06-25 11:02:19.485 | INFO     | uvicorn.lifespan.on:startup:59 - Application startup complete.
+2021-06-25 11:02:19.485 | INFO     | uvicorn.lifespan.on:startup:59 - Application startup complete.
+2021-06-25 11:02:19.485 | INFO     | uvicorn.lifespan.on:startup:59 - Application startup complete.
+2021-06-25 11:02:28.475 | INFO     | main:init_resource:15 - http://localhost:8000/internal/polls/b39a47ba4cf140fc8068a12b881563f3
+2021-06-25 11:02:28.476 | INFO     | uvicorn.protocols.http.h11_impl:send:434 - 127.0.0.1:55336 - "GET /internal/polls/b39a47ba4cf140fc8068a12b881563f3 HTTP/1.1" 500
+2021-06-25 11:02:28.476 | ERROR    | uvicorn.protocols.http.h11_impl:run_asgi:372 - Exception in ASGI application
+
+Traceback (most recent call last):
+
+  File "<string>", line 1, in <module>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               │     │   └ 4
+               │     └ 7
+               └ <function _main at 0x7ff542720160>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/multiprocessing/spawn.py", line 129, in _main
+    return self._bootstrap(parent_sentinel)
+           │    │          └ 4
+           │    └ <function BaseProcess._bootstrap at 0x7ff542876f70>
+           └ <SpawnProcess name='SpawnProcess-1' parent=306469 started>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+    │    └ <function BaseProcess.run at 0x7ff5428765e0>
+    └ <SpawnProcess name='SpawnProcess-1' parent=306469 started>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {'config': <uvicorn.config.Config object at 0x7ff54271c160>, 'target': <bound method Server.run of <uvicorn.server.Server obj...
+    │    │        │    │        └ <SpawnProcess name='SpawnProcess-1' parent=306469 started>
+    │    │        │    └ ()
+    │    │        └ <SpawnProcess name='SpawnProcess-1' parent=306469 started>
+    │    └ <function subprocess_started at 0x7ff541f6c790>
+    └ <SpawnProcess name='SpawnProcess-1' parent=306469 started>
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/uvicorn/subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+    │              └ [<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000)>]
+    └ <bound method Server.run of <uvicorn.server.Server object at 0x7ff54271c130>>
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/uvicorn/server.py", line 50, in run
+    loop.run_until_complete(self.serve(sockets=sockets))
+    │    │                  │    │             └ [<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000)>]
+    │    │                  │    └ <function Server.serve at 0x7ff541f6dd30>
+    │    │                  └ <uvicorn.server.Server object at 0x7ff54271c130>
+    │    └ <function BaseEventLoop.run_until_complete at 0x7ff5422441f0>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x7ff542244160>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x7ff542245ca0>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x7ff54231b940>
+    └ <Handle <TaskStepMethWrapper object at 0x7ff540097430>()>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <TaskStepMethWrapper object at 0x7ff540097430>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <TaskStepMethWrapper object at 0x7ff540097430>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <TaskStepMethWrapper object at 0x7ff540097430>()>
+> File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 369, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+                   │   │    │      │    │        │    └ <function RequestResponseCycle.send at 0x7ff541df2160>
+                   │   │    │      │    │        └ <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7ff540097400>
+                   │   │    │      │    └ <function RequestResponseCycle.receive at 0x7ff541df21f0>
+                   │   │    │      └ <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7ff540097400>
+                   │   │    └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.1'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+                   │   └ <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7ff540097400>
+                   └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x7ff541e85e80>
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+                 │    │   │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7ff540097400>>
+                 │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7ff540097400>>
+                 │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.1'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+                 │    └ <fastapi.applications.FastAPI object at 0x7ff541df7610>
+                 └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x7ff541e85e80>
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+                           │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7ff540097400>>
+                           │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7ff540097400>>
+                           └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.1'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7ff540097400>>
+          │    │                │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7ff540097400>>
+          │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.1'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x7ff54026b610>
+          └ <fastapi.applications.FastAPI object at 0x7ff541df7610>
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+          │    │   │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x7ff540224820>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7ff540097400>>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.1'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.base.BaseHTTPMiddleware object at 0x7ff54026b580>
+          └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x7ff54026b610>
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/starlette/middleware/base.py", line 25, in __call__
+    response = await self.dispatch_func(request, self.call_next)
+                     │    │             │        │    └ <function BaseHTTPMiddleware.call_next at 0x7ff5415121f0>
+                     │    │             │        └ <starlette.middleware.base.BaseHTTPMiddleware object at 0x7ff54026b580>
+                     │    │             └ <starlette.requests.Request object at 0x7ff54021ea60>
+                     │    └ <function init_resource at 0x7ff54026d670>
+                     └ <starlette.middleware.base.BaseHTTPMiddleware object at 0x7ff54026b580>
+
+  File "/home/danghh-1998/Documents/poll-vote/./main.py", line 16, in init_resource
+    raise Exception()
+
+Exception
+2021-06-25 11:02:28.485 | ERROR    | uvicorn.protocols.http.h11_impl:run_asgi:372 - Exception in ASGI application
+
+Traceback (most recent call last):
+
+  File "<string>", line 1, in <module>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               │     │   └ 4
+               │     └ 7
+               └ <function _main at 0x7ff542720160>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/multiprocessing/spawn.py", line 129, in _main
+    return self._bootstrap(parent_sentinel)
+           │    │          └ 4
+           │    └ <function BaseProcess._bootstrap at 0x7ff542876f70>
+           └ <SpawnProcess name='SpawnProcess-1' parent=306469 started>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+    │    └ <function BaseProcess.run at 0x7ff5428765e0>
+    └ <SpawnProcess name='SpawnProcess-1' parent=306469 started>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {'config': <uvicorn.config.Config object at 0x7ff54271c160>, 'target': <bound method Server.run of <uvicorn.server.Server obj...
+    │    │        │    │        └ <SpawnProcess name='SpawnProcess-1' parent=306469 started>
+    │    │        │    └ ()
+    │    │        └ <SpawnProcess name='SpawnProcess-1' parent=306469 started>
+    │    └ <function subprocess_started at 0x7ff541f6c790>
+    └ <SpawnProcess name='SpawnProcess-1' parent=306469 started>
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/uvicorn/subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+    │              └ [<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000)>]
+    └ <bound method Server.run of <uvicorn.server.Server object at 0x7ff54271c130>>
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/uvicorn/server.py", line 50, in run
+    loop.run_until_complete(self.serve(sockets=sockets))
+    │    │                  │    │             └ [<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000)>]
+    │    │                  │    └ <function Server.serve at 0x7ff541f6dd30>
+    │    │                  └ <uvicorn.server.Server object at 0x7ff54271c130>
+    │    └ <function BaseEventLoop.run_until_complete at 0x7ff5422441f0>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x7ff542244160>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x7ff542245ca0>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x7ff54231b940>
+    └ <Handle <TaskStepMethWrapper object at 0x7ff540097430>()>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <TaskStepMethWrapper object at 0x7ff540097430>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <TaskStepMethWrapper object at 0x7ff540097430>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <TaskStepMethWrapper object at 0x7ff540097430>()>
+> File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 369, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+                   │   │    │      │    │        │    └ <function RequestResponseCycle.send at 0x7ff541df2160>
+                   │   │    │      │    │        └ <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7ff540097400>
+                   │   │    │      │    └ <function RequestResponseCycle.receive at 0x7ff541df21f0>
+                   │   │    │      └ <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7ff540097400>
+                   │   │    └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.1'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+                   │   └ <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7ff540097400>
+                   └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x7ff541e85e80>
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+                 │    │   │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7ff540097400>>
+                 │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7ff540097400>>
+                 │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.1'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+                 │    └ <fastapi.applications.FastAPI object at 0x7ff541df7610>
+                 └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x7ff541e85e80>
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+                           │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7ff540097400>>
+                           │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7ff540097400>>
+                           └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.1'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7ff540097400>>
+          │    │                │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7ff540097400>>
+          │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.1'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x7ff54026b610>
+          └ <fastapi.applications.FastAPI object at 0x7ff541df7610>
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+          │    │   │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x7ff540224820>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7ff540097400>>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.1'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.base.BaseHTTPMiddleware object at 0x7ff54026b580>
+          └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x7ff54026b610>
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/starlette/middleware/base.py", line 25, in __call__
+    response = await self.dispatch_func(request, self.call_next)
+                     │    │             │        │    └ <function BaseHTTPMiddleware.call_next at 0x7ff5415121f0>
+                     │    │             │        └ <starlette.middleware.base.BaseHTTPMiddleware object at 0x7ff54026b580>
+                     │    │             └ <starlette.requests.Request object at 0x7ff54021ea60>
+                     │    └ <function init_resource at 0x7ff54026d670>
+                     └ <starlette.middleware.base.BaseHTTPMiddleware object at 0x7ff54026b580>
+
+  File "/home/danghh-1998/Documents/poll-vote/./main.py", line 16, in init_resource
+    raise Exception()
+
+Exception
+2021-06-25 11:02:28.490 | ERROR    | uvicorn.protocols.http.h11_impl:run_asgi:372 - Exception in ASGI application
+
+Traceback (most recent call last):
+
+  File "<string>", line 1, in <module>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               │     │   └ 4
+               │     └ 7
+               └ <function _main at 0x7ff542720160>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/multiprocessing/spawn.py", line 129, in _main
+    return self._bootstrap(parent_sentinel)
+           │    │          └ 4
+           │    └ <function BaseProcess._bootstrap at 0x7ff542876f70>
+           └ <SpawnProcess name='SpawnProcess-1' parent=306469 started>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+    │    └ <function BaseProcess.run at 0x7ff5428765e0>
+    └ <SpawnProcess name='SpawnProcess-1' parent=306469 started>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {'config': <uvicorn.config.Config object at 0x7ff54271c160>, 'target': <bound method Server.run of <uvicorn.server.Server obj...
+    │    │        │    │        └ <SpawnProcess name='SpawnProcess-1' parent=306469 started>
+    │    │        │    └ ()
+    │    │        └ <SpawnProcess name='SpawnProcess-1' parent=306469 started>
+    │    └ <function subprocess_started at 0x7ff541f6c790>
+    └ <SpawnProcess name='SpawnProcess-1' parent=306469 started>
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/uvicorn/subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+    │              └ [<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000)>]
+    └ <bound method Server.run of <uvicorn.server.Server object at 0x7ff54271c130>>
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/uvicorn/server.py", line 50, in run
+    loop.run_until_complete(self.serve(sockets=sockets))
+    │    │                  │    │             └ [<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000)>]
+    │    │                  │    └ <function Server.serve at 0x7ff541f6dd30>
+    │    │                  └ <uvicorn.server.Server object at 0x7ff54271c130>
+    │    └ <function BaseEventLoop.run_until_complete at 0x7ff5422441f0>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x7ff542244160>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x7ff542245ca0>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x7ff54231b940>
+    └ <Handle <TaskStepMethWrapper object at 0x7ff540097430>()>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <TaskStepMethWrapper object at 0x7ff540097430>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <TaskStepMethWrapper object at 0x7ff540097430>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <TaskStepMethWrapper object at 0x7ff540097430>()>
+> File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 369, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+                   │   │    │      │    │        │    └ <function RequestResponseCycle.send at 0x7ff541df2160>
+                   │   │    │      │    │        └ <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7ff540097400>
+                   │   │    │      │    └ <function RequestResponseCycle.receive at 0x7ff541df21f0>
+                   │   │    │      └ <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7ff540097400>
+                   │   │    └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.1'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+                   │   └ <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7ff540097400>
+                   └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x7ff541e85e80>
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+                 │    │   │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7ff540097400>>
+                 │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7ff540097400>>
+                 │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.1'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+                 │    └ <fastapi.applications.FastAPI object at 0x7ff541df7610>
+                 └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x7ff541e85e80>
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+                           │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7ff540097400>>
+                           │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7ff540097400>>
+                           └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.1'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7ff540097400>>
+          │    │                │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7ff540097400>>
+          │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.1'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x7ff54026b610>
+          └ <fastapi.applications.FastAPI object at 0x7ff541df7610>
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+          │    │   │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x7ff540224820>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7ff540097400>>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.1'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.base.BaseHTTPMiddleware object at 0x7ff54026b580>
+          └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x7ff54026b610>
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/starlette/middleware/base.py", line 25, in __call__
+    response = await self.dispatch_func(request, self.call_next)
+                     │    │             │        │    └ <function BaseHTTPMiddleware.call_next at 0x7ff5415121f0>
+                     │    │             │        └ <starlette.middleware.base.BaseHTTPMiddleware object at 0x7ff54026b580>
+                     │    │             └ <starlette.requests.Request object at 0x7ff54021ea60>
+                     │    └ <function init_resource at 0x7ff54026d670>
+                     └ <starlette.middleware.base.BaseHTTPMiddleware object at 0x7ff54026b580>
+
+  File "/home/danghh-1998/Documents/poll-vote/./main.py", line 16, in init_resource
+    raise Exception()
+
+Exception
+2021-06-25 11:03:21.714 | INFO     | uvicorn.server:shutdown:242 - Shutting down
+2021-06-25 11:03:21.715 | INFO     | uvicorn.server:shutdown:242 - Shutting down
+2021-06-25 11:03:21.715 | INFO     | uvicorn.server:shutdown:242 - Shutting down
+2021-06-25 11:03:21.816 | INFO     | uvicorn.lifespan.on:shutdown:64 - Waiting for application shutdown.
+2021-06-25 11:03:21.818 | INFO     | uvicorn.lifespan.on:shutdown:64 - Waiting for application shutdown.
+2021-06-25 11:03:21.819 | INFO     | uvicorn.lifespan.on:shutdown:64 - Waiting for application shutdown.
+2021-06-25 11:03:21.820 | INFO     | uvicorn.lifespan.on:shutdown:75 - Application shutdown complete.
+2021-06-25 11:03:21.821 | INFO     | uvicorn.lifespan.on:shutdown:75 - Application shutdown complete.
+2021-06-25 11:03:21.822 | INFO     | uvicorn.lifespan.on:shutdown:75 - Application shutdown complete.
+2021-06-25 11:03:21.823 | INFO     | uvicorn.server:serve:75 - Finished server process [306471]
+2021-06-25 11:03:21.823 | INFO     | uvicorn.server:serve:75 - Finished server process [306471]
+2021-06-25 11:03:21.824 | INFO     | uvicorn.server:serve:75 - Finished server process [306471]
+2021-06-25 11:03:22.150 | INFO     | uvicorn.server:serve:65 - Started server process [306604]
+2021-06-25 11:03:22.150 | INFO     | uvicorn.lifespan.on:startup:45 - Waiting for application startup.
+2021-06-25 11:03:22.158 | INFO     | uvicorn.lifespan.on:startup:59 - Application startup complete.
+2021-06-25 11:03:23.063 | INFO     | uvicorn.server:shutdown:242 - Shutting down
+2021-06-25 11:03:23.166 | INFO     | uvicorn.lifespan.on:shutdown:64 - Waiting for application shutdown.
+2021-06-25 11:03:23.168 | INFO     | uvicorn.lifespan.on:shutdown:75 - Application shutdown complete.
+2021-06-25 11:03:23.169 | INFO     | uvicorn.server:serve:75 - Finished server process [306604]
+2021-06-25 11:03:24.581 | INFO     | uvicorn.server:serve:65 - Started server process [306618]
+2021-06-25 11:03:24.581 | INFO     | uvicorn.lifespan.on:startup:45 - Waiting for application startup.
+2021-06-25 11:03:24.588 | INFO     | uvicorn.lifespan.on:startup:59 - Application startup complete.
+2021-06-25 11:03:32.135 | INFO     | main:init_resource:15 - http://localhost:8000/internal/polls/b39a47ba4cf140fc8068a12b881563f3
+2021-06-25 11:03:32.136 | INFO     | uvicorn.protocols.http.h11_impl:send:434 - 127.0.0.1:55356 - "GET /internal/polls/b39a47ba4cf140fc8068a12b881563f3 HTTP/1.1" 500
+2021-06-25 11:03:32.160 | ERROR    | uvicorn.protocols.http.h11_impl:run_asgi:372 - Exception in ASGI application
+
+Traceback (most recent call last):
+
+  File "<string>", line 1, in <module>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               │     │   └ 4
+               │     └ 7
+               └ <function _main at 0x7f3d42965160>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/multiprocessing/spawn.py", line 129, in _main
+    return self._bootstrap(parent_sentinel)
+           │    │          └ 4
+           │    └ <function BaseProcess._bootstrap at 0x7f3d42abbf70>
+           └ <SpawnProcess name='SpawnProcess-1' parent=306616 started>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+    │    └ <function BaseProcess.run at 0x7f3d42abb5e0>
+    └ <SpawnProcess name='SpawnProcess-1' parent=306616 started>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {'config': <uvicorn.config.Config object at 0x7f3d42961160>, 'target': <bound method Server.run of <uvicorn.server.Server obj...
+    │    │        │    │        └ <SpawnProcess name='SpawnProcess-1' parent=306616 started>
+    │    │        │    └ ()
+    │    │        └ <SpawnProcess name='SpawnProcess-1' parent=306616 started>
+    │    └ <function subprocess_started at 0x7f3d421b1790>
+    └ <SpawnProcess name='SpawnProcess-1' parent=306616 started>
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/uvicorn/subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+    │              └ [<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000)>]
+    └ <bound method Server.run of <uvicorn.server.Server object at 0x7f3d42961130>>
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/uvicorn/server.py", line 50, in run
+    loop.run_until_complete(self.serve(sockets=sockets))
+    │    │                  │    │             └ [<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000)>]
+    │    │                  │    └ <function Server.serve at 0x7f3d421b2d30>
+    │    │                  └ <uvicorn.server.Server object at 0x7f3d42961130>
+    │    └ <function BaseEventLoop.run_until_complete at 0x7f3d424891f0>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x7f3d42489160>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x7f3d4248aca0>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x7f3d42560940>
+    └ <Handle <TaskStepMethWrapper object at 0x7f3d402dc3a0>()>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <TaskStepMethWrapper object at 0x7f3d402dc3a0>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <TaskStepMethWrapper object at 0x7f3d402dc3a0>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <TaskStepMethWrapper object at 0x7f3d402dc3a0>()>
+> File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 369, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+                   │   │    │      │    │        │    └ <function RequestResponseCycle.send at 0x7f3d42037160>
+                   │   │    │      │    │        └ <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f3d402dc370>
+                   │   │    │      │    └ <function RequestResponseCycle.receive at 0x7f3d420371f0>
+                   │   │    │      └ <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f3d402dc370>
+                   │   │    └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.1'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+                   │   └ <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f3d402dc370>
+                   └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x7f3d420cae80>
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+                 │    │   │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f3d402dc370>>
+                 │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f3d402dc370>>
+                 │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.1'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+                 │    └ <fastapi.applications.FastAPI object at 0x7f3d4203c610>
+                 └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x7f3d420cae80>
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+                           │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f3d402dc370>>
+                           │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f3d402dc370>>
+                           └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.1'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f3d402dc370>>
+          │    │                │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f3d402dc370>>
+          │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.1'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x7f3d404b0580>
+          └ <fastapi.applications.FastAPI object at 0x7f3d4203c610>
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+          │    │   │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x7f3d40467820>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f3d402dc370>>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.1'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.base.BaseHTTPMiddleware object at 0x7f3d404b04f0>
+          └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x7f3d404b0580>
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/starlette/middleware/base.py", line 25, in __call__
+    response = await self.dispatch_func(request, self.call_next)
+                     │    │             │        │    └ <function BaseHTTPMiddleware.call_next at 0x7f3d417571f0>
+                     │    │             │        └ <starlette.middleware.base.BaseHTTPMiddleware object at 0x7f3d404b04f0>
+                     │    │             └ <starlette.requests.Request object at 0x7f3d40464b20>
+                     │    └ <function init_resource at 0x7f3d404b2670>
+                     └ <starlette.middleware.base.BaseHTTPMiddleware object at 0x7f3d404b04f0>
+
+  File "/home/danghh-1998/Documents/poll-vote/./main.py", line 16, in init_resource
+    raise Exception()
+
+Exception
+2021-06-25 11:03:54.100 | INFO     | uvicorn.server:shutdown:242 - Shutting down
+2021-06-25 11:03:54.202 | INFO     | uvicorn.lifespan.on:shutdown:64 - Waiting for application shutdown.
+2021-06-25 11:03:54.203 | INFO     | uvicorn.lifespan.on:shutdown:75 - Application shutdown complete.
+2021-06-25 11:03:54.205 | INFO     | uvicorn.server:serve:75 - Finished server process [306618]
+2021-06-25 11:04:00.354 | INFO     | uvicorn.server:serve:65 - Started server process [306680]
+2021-06-25 11:04:00.354 | INFO     | uvicorn.lifespan.on:startup:45 - Waiting for application startup.
+2021-06-25 11:04:00.362 | INFO     | uvicorn.lifespan.on:startup:59 - Application startup complete.
+2021-06-25 11:04:20.035 | INFO     | uvicorn.server:shutdown:242 - Shutting down
+2021-06-25 11:04:20.137 | INFO     | uvicorn.lifespan.on:shutdown:64 - Waiting for application shutdown.
+2021-06-25 11:04:20.139 | INFO     | uvicorn.lifespan.on:shutdown:75 - Application shutdown complete.
+2021-06-25 11:04:20.140 | INFO     | uvicorn.server:serve:75 - Finished server process [306680]
+2021-06-25 11:06:04.657 | INFO     | main:init_resource:15 - http://localhost:8000/internal/polls/b39a47ba4cf140fc8068a12b881563f3
+2021-06-25 11:12:39.334 | INFO     | uvicorn.server:serve:65 - Started server process [308142]
+2021-06-25 11:12:39.335 | INFO     | uvicorn.lifespan.on:startup:45 - Waiting for application startup.
+2021-06-25 11:12:39.342 | INFO     | uvicorn.lifespan.on:startup:59 - Application startup complete.
+2021-06-25 11:12:43.658 | INFO     | uvicorn.server:shutdown:242 - Shutting down
+2021-06-25 11:12:43.760 | INFO     | uvicorn.lifespan.on:shutdown:64 - Waiting for application shutdown.
+2021-06-25 11:12:43.762 | INFO     | uvicorn.lifespan.on:shutdown:75 - Application shutdown complete.
+2021-06-25 11:12:43.763 | INFO     | uvicorn.server:serve:75 - Finished server process [308142]
+2021-06-25 11:12:45.027 | INFO     | uvicorn.server:serve:65 - Started server process [308159]
+2021-06-25 11:12:45.027 | INFO     | uvicorn.lifespan.on:startup:45 - Waiting for application startup.
+2021-06-25 11:12:45.034 | INFO     | uvicorn.lifespan.on:startup:59 - Application startup complete.
+2021-06-25 11:12:50.062 | INFO     | main:init_resource:18 - http://localhost:8000/internal/polls/b39a47ba4cf140fc8068a12b881563f3
+2021-06-25 11:13:29.495 | INFO     | uvicorn.server:shutdown:242 - Shutting down
+2021-06-25 11:13:29.596 | INFO     | uvicorn.lifespan.on:shutdown:64 - Waiting for application shutdown.
+2021-06-25 11:13:29.597 | INFO     | uvicorn.lifespan.on:shutdown:75 - Application shutdown complete.
+2021-06-25 11:13:29.597 | INFO     | uvicorn.server:serve:75 - Finished server process [308159]
+2021-06-25 11:13:29.950 | INFO     | uvicorn.server:serve:65 - Started server process [308285]
+2021-06-25 11:13:29.951 | INFO     | uvicorn.lifespan.on:startup:45 - Waiting for application startup.
+2021-06-25 11:13:29.958 | INFO     | uvicorn.lifespan.on:startup:59 - Application startup complete.
+2021-06-25 11:13:30.442 | INFO     | main:init_resource:18 - http://localhost:8000/internal/polls/b39a47ba4cf140fc8068a12b881563f3
+2021-06-25 11:13:30.443 | ERROR    | uvicorn.protocols.http.h11_impl:run_asgi:372 - Exception in ASGI application
+
+Traceback (most recent call last):
+
+  File "<string>", line 1, in <module>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               │     │   └ 4
+               │     └ 7
+               └ <function _main at 0x7f96d4edf160>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/multiprocessing/spawn.py", line 129, in _main
+    return self._bootstrap(parent_sentinel)
+           │    │          └ 4
+           │    └ <function BaseProcess._bootstrap at 0x7f96d5035f70>
+           └ <SpawnProcess name='SpawnProcess-2' parent=308157 started>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+    │    └ <function BaseProcess.run at 0x7f96d50355e0>
+    └ <SpawnProcess name='SpawnProcess-2' parent=308157 started>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {'config': <uvicorn.config.Config object at 0x7f96d4edb160>, 'target': <bound method Server.run of <uvicorn.server.Server obj...
+    │    │        │    │        └ <SpawnProcess name='SpawnProcess-2' parent=308157 started>
+    │    │        │    └ ()
+    │    │        └ <SpawnProcess name='SpawnProcess-2' parent=308157 started>
+    │    └ <function subprocess_started at 0x7f96d472b790>
+    └ <SpawnProcess name='SpawnProcess-2' parent=308157 started>
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/uvicorn/subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+    │              └ [<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000)>]
+    └ <bound method Server.run of <uvicorn.server.Server object at 0x7f96d4edb130>>
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/uvicorn/server.py", line 50, in run
+    loop.run_until_complete(self.serve(sockets=sockets))
+    │    │                  │    │             └ [<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000)>]
+    │    │                  │    └ <function Server.serve at 0x7f96d472cd30>
+    │    │                  └ <uvicorn.server.Server object at 0x7f96d4edb130>
+    │    └ <function BaseEventLoop.run_until_complete at 0x7f96d4a031f0>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x7f96d4a03160>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x7f96d4a04ca0>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x7f96d4ada940>
+    └ <Handle <TaskStepMethWrapper object at 0x7f96d1856100>()>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <TaskStepMethWrapper object at 0x7f96d1856100>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <TaskStepMethWrapper object at 0x7f96d1856100>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <TaskStepMethWrapper object at 0x7f96d1856100>()>
+> File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 369, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+                   │   │    │      │    │        │    └ <function RequestResponseCycle.send at 0x7f96d45b1160>
+                   │   │    │      │    │        └ <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f96d18560d0>
+                   │   │    │      │    └ <function RequestResponseCycle.receive at 0x7f96d45b11f0>
+                   │   │    │      └ <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f96d18560d0>
+                   │   │    └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.1'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+                   │   └ <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f96d18560d0>
+                   └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x7f96d4644e80>
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+                 │    │   │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f96d18560d0>>
+                 │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f96d18560d0>>
+                 │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.1'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+                 │    └ <fastapi.applications.FastAPI object at 0x7f96d45b7670>
+                 └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x7f96d4644e80>
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+                           │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f96d18560d0>>
+                           │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f96d18560d0>>
+                           └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.1'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f96d18560d0>>
+          │    │                │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f96d18560d0>>
+          │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.1'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x7f96d322f280>
+          └ <fastapi.applications.FastAPI object at 0x7f96d45b7670>
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+          │    │   │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x7f96d19de8b0>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7f96d18560d0>>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.1'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.base.BaseHTTPMiddleware object at 0x7f96d322f160>
+          └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x7f96d322f280>
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/starlette/middleware/base.py", line 25, in __call__
+    response = await self.dispatch_func(request, self.call_next)
+                     │    │             │        │    └ <function BaseHTTPMiddleware.call_next at 0x7f96d3cd11f0>
+                     │    │             │        └ <starlette.middleware.base.BaseHTTPMiddleware object at 0x7f96d322f160>
+                     │    │             └ <starlette.requests.Request object at 0x7f96d19dc910>
+                     │    └ <function init_resource at 0x7f96d322c700>
+                     └ <starlette.middleware.base.BaseHTTPMiddleware object at 0x7f96d322f160>
+
+  File "/home/danghh-1998/Documents/poll-vote/./main.py", line 19, in init_resource
+    raise Exception()
+
+Exception
+2021-06-25 11:13:52.341 | INFO     | uvicorn.server:shutdown:242 - Shutting down
+2021-06-25 11:13:52.442 | INFO     | uvicorn.lifespan.on:shutdown:64 - Waiting for application shutdown.
+2021-06-25 11:13:52.442 | INFO     | uvicorn.lifespan.on:shutdown:75 - Application shutdown complete.
+2021-06-25 11:13:52.442 | INFO     | uvicorn.server:serve:75 - Finished server process [308285]
+2021-06-25 11:13:52.781 | INFO     | uvicorn.server:serve:65 - Started server process [308327]
+2021-06-25 11:13:52.782 | INFO     | uvicorn.lifespan.on:startup:45 - Waiting for application startup.
+2021-06-25 11:13:52.789 | INFO     | uvicorn.lifespan.on:startup:59 - Application startup complete.
+2021-06-25 11:13:53.895 | INFO     | uvicorn.server:shutdown:242 - Shutting down
+2021-06-25 11:13:53.996 | INFO     | uvicorn.lifespan.on:shutdown:64 - Waiting for application shutdown.
+2021-06-25 11:13:53.998 | INFO     | uvicorn.lifespan.on:shutdown:75 - Application shutdown complete.
+2021-06-25 11:13:53.999 | INFO     | uvicorn.server:serve:75 - Finished server process [308327]
+2021-06-25 11:15:49.986 | INFO     | uvicorn.server:serve:65 - Started server process [308592]
+2021-06-25 11:15:49.988 | INFO     | uvicorn.lifespan.on:startup:45 - Waiting for application startup.
+2021-06-25 11:15:49.998 | INFO     | uvicorn.lifespan.on:startup:59 - Application startup complete.
+2021-06-25 11:15:54.715 | INFO     | uvicorn.server:shutdown:242 - Shutting down
+2021-06-25 11:15:54.817 | INFO     | uvicorn.lifespan.on:shutdown:64 - Waiting for application shutdown.
+2021-06-25 11:15:54.819 | INFO     | uvicorn.lifespan.on:shutdown:75 - Application shutdown complete.
+2021-06-25 11:15:54.820 | INFO     | uvicorn.server:serve:75 - Finished server process [308592]
+2021-06-25 11:16:19.092 | INFO     | uvicorn.server:serve:65 - Started server process [308668]
+2021-06-25 11:16:19.094 | INFO     | uvicorn.lifespan.on:startup:45 - Waiting for application startup.
+2021-06-25 11:16:19.103 | INFO     | uvicorn.lifespan.on:startup:59 - Application startup complete.
+2021-06-25 11:17:55.172 | INFO     | uvicorn.server:shutdown:242 - Shutting down
+2021-06-25 11:17:55.273 | INFO     | uvicorn.lifespan.on:shutdown:64 - Waiting for application shutdown.
+2021-06-25 11:17:55.273 | INFO     | uvicorn.lifespan.on:shutdown:75 - Application shutdown complete.
+2021-06-25 11:17:55.273 | INFO     | uvicorn.server:serve:75 - Finished server process [308668]
+2021-06-25 11:17:55.639 | INFO     | uvicorn.lifespan.on:startup:59 - Application startup complete.
+2021-06-25 11:17:56.343 | INFO     | uvicorn.server:shutdown:242 - Shutting down
+2021-06-25 11:17:56.445 | INFO     | uvicorn.lifespan.on:shutdown:64 - Waiting for application shutdown.
+2021-06-25 11:17:56.446 | INFO     | uvicorn.lifespan.on:shutdown:75 - Application shutdown complete.
+2021-06-25 11:17:56.447 | INFO     | uvicorn.server:serve:75 - Finished server process [308891]
+2021-06-25 11:17:57.555 | INFO     | uvicorn.lifespan.on:startup:59 - Application startup complete.
+2021-06-25 11:18:24.005 | INFO     | main:init_resource:15 - http://localhost:8000/internal/polls/b39a47ba4cf140fc8068a12b881563f3
+2021-06-25 11:18:36.000 | INFO     | uvicorn.server:shutdown:242 - Shutting down
+2021-06-25 11:18:36.101 | INFO     | uvicorn.lifespan.on:shutdown:64 - Waiting for application shutdown.
+2021-06-25 11:18:36.102 | INFO     | uvicorn.lifespan.on:shutdown:75 - Application shutdown complete.
+2021-06-25 11:18:36.102 | INFO     | uvicorn.server:serve:75 - Finished server process [308905]
+2021-06-25 11:19:21.048 | INFO     | uvicorn.lifespan.on:startup:59 - Application startup complete.
+2021-06-25 11:21:47.883 | INFO     | uvicorn.server:shutdown:242 - Shutting down
+2021-06-25 11:21:47.984 | INFO     | uvicorn.lifespan.on:shutdown:64 - Waiting for application shutdown.
+2021-06-25 11:21:47.985 | INFO     | uvicorn.lifespan.on:shutdown:75 - Application shutdown complete.
+2021-06-25 11:21:47.985 | INFO     | uvicorn.server:serve:75 - Finished server process [309145]
+2021-06-25 11:21:48.331 | INFO     | uvicorn.lifespan.on:startup:59 - Application startup complete.
+2021-06-25 11:21:48.634 | INFO     | uvicorn.server:shutdown:242 - Shutting down
+2021-06-25 11:21:48.736 | INFO     | uvicorn.lifespan.on:shutdown:64 - Waiting for application shutdown.
+2021-06-25 11:21:48.737 | INFO     | uvicorn.lifespan.on:shutdown:75 - Application shutdown complete.
+2021-06-25 11:21:48.738 | INFO     | uvicorn.server:serve:75 - Finished server process [309400]
+2021-06-25 11:21:50.080 | INFO     | uvicorn.lifespan.on:startup:59 - Application startup complete.
+2021-06-25 11:22:34.242 | INFO     | uvicorn.server:shutdown:242 - Shutting down
+2021-06-25 11:22:34.342 | INFO     | uvicorn.lifespan.on:shutdown:64 - Waiting for application shutdown.
+2021-06-25 11:22:34.343 | INFO     | uvicorn.lifespan.on:shutdown:75 - Application shutdown complete.
+2021-06-25 11:22:34.343 | INFO     | uvicorn.server:serve:75 - Finished server process [309415]
+2021-06-25 11:22:34.703 | INFO     | uvicorn.lifespan.on:startup:59 - Application startup complete.
+2021-06-25 11:23:28.902 | INFO     | uvicorn.server:shutdown:242 - Shutting down
+2021-06-25 11:23:29.004 | INFO     | uvicorn.lifespan.on:shutdown:64 - Waiting for application shutdown.
+2021-06-25 11:23:29.006 | INFO     | uvicorn.lifespan.on:shutdown:75 - Application shutdown complete.
+2021-06-25 11:23:29.007 | INFO     | uvicorn.server:serve:75 - Finished server process [309532]
+2021-06-25 11:23:30.439 | INFO     | uvicorn.lifespan.on:startup:59 - Application startup complete.
+2021-06-25 11:23:36.428 | INFO     | main:init_resource:15 - http://localhost:8000/internal/polls/b39a47ba4cf140fc8068a12b881563f3
+2021-06-25 11:24:06.372 | INFO     | uvicorn.server:shutdown:242 - Shutting down
+2021-06-25 11:24:06.473 | INFO     | uvicorn.lifespan.on:shutdown:64 - Waiting for application shutdown.
+2021-06-25 11:24:06.473 | INFO     | uvicorn.lifespan.on:shutdown:75 - Application shutdown complete.
+2021-06-25 11:24:06.474 | INFO     | uvicorn.server:serve:75 - Finished server process [309666]
+2021-06-25 11:24:06.827 | INFO     | uvicorn.lifespan.on:startup:59 - Application startup complete.
+2021-06-25 11:24:07.833 | INFO     | uvicorn.server:shutdown:242 - Shutting down
+2021-06-25 11:24:07.935 | INFO     | uvicorn.lifespan.on:shutdown:64 - Waiting for application shutdown.
+2021-06-25 11:24:07.937 | INFO     | uvicorn.lifespan.on:shutdown:75 - Application shutdown complete.
+2021-06-25 11:24:07.938 | INFO     | uvicorn.server:serve:75 - Finished server process [309776]
+2021-06-25 11:24:11.017 | INFO     | uvicorn.lifespan.on:startup:59 - Application startup complete.
+2021-06-25 11:24:15.097 | INFO     | main:init_resource:15 - http://localhost:8000/internal/polls/b39a47ba4cf140fc8068a12b881563f3
+2021-06-25 11:25:53.200 | INFO     | uvicorn.server:shutdown:242 - Shutting down
+2021-06-25 11:25:53.301 | INFO     | uvicorn.lifespan.on:shutdown:64 - Waiting for application shutdown.
+2021-06-25 11:25:53.302 | INFO     | uvicorn.lifespan.on:shutdown:75 - Application shutdown complete.
+2021-06-25 11:25:53.302 | INFO     | uvicorn.server:serve:75 - Finished server process [309793]
+2021-06-25 11:25:53.658 | INFO     | uvicorn.lifespan.on:startup:59 - Application startup complete.
+2021-06-25 11:26:50.875 | INFO     | uvicorn.server:shutdown:242 - Shutting down
+2021-06-25 11:26:50.977 | INFO     | uvicorn.lifespan.on:shutdown:64 - Waiting for application shutdown.
+2021-06-25 11:26:50.979 | INFO     | uvicorn.lifespan.on:shutdown:75 - Application shutdown complete.
+2021-06-25 11:26:50.980 | INFO     | uvicorn.server:serve:75 - Finished server process [309993]
+2021-06-25 11:26:51.348 | INFO     | uvicorn.lifespan.on:startup:59 - Application startup complete.
+2021-06-25 11:26:56.526 | INFO     | main:init_resource:15 - http://localhost:8000/internal/polls/b39a47ba4cf140fc8068a12b881563f3
+2021-06-25 11:27:57.601 | INFO     | uvicorn.server:shutdown:242 - Shutting down
+2021-06-25 11:27:57.702 | INFO     | uvicorn.lifespan.on:shutdown:64 - Waiting for application shutdown.
+2021-06-25 11:27:57.703 | INFO     | uvicorn.lifespan.on:shutdown:75 - Application shutdown complete.
+2021-06-25 11:27:57.704 | INFO     | uvicorn.server:serve:75 - Finished server process [310109]
+2021-06-25 11:27:58.082 | INFO     | uvicorn.lifespan.on:startup:59 - Application startup complete.
+2021-06-25 11:28:09.300 | INFO     | main:init_resource:15 - http://localhost:8000/internal/polls/b39a47ba4cf140fc8068a12b881563f3
+2021-06-25 11:28:14.142 | INFO     | uvicorn.server:shutdown:242 - Shutting down
+2021-06-25 11:28:14.245 | INFO     | uvicorn.lifespan.on:shutdown:64 - Waiting for application shutdown.
+2021-06-25 11:28:14.246 | INFO     | uvicorn.lifespan.on:shutdown:75 - Application shutdown complete.
+2021-06-25 11:28:14.246 | INFO     | uvicorn.server:serve:75 - Finished server process [310276]
+2021-06-25 11:28:14.590 | INFO     | uvicorn.lifespan.on:startup:59 - Application startup complete.
+2021-06-25 11:28:17.414 | INFO     | main:init_resource:15 - http://localhost:8000/internal/polls/b39a47ba4cf140fc8068a12b881563f3
+2021-06-25 11:28:22.121 | INFO     | uvicorn.server:shutdown:242 - Shutting down
+2021-06-25 11:28:22.224 | INFO     | uvicorn.lifespan.on:shutdown:64 - Waiting for application shutdown.
+2021-06-25 11:28:22.225 | INFO     | uvicorn.lifespan.on:shutdown:75 - Application shutdown complete.
+2021-06-25 11:28:22.226 | INFO     | uvicorn.server:serve:75 - Finished server process [310374]
+2021-06-25 11:28:25.948 | INFO     | uvicorn.lifespan.on:startup:59 - Application startup complete.
+2021-06-25 11:28:28.877 | INFO     | main:init_resource:15 - http://localhost:8000/internal/polls/b39a47ba4cf140fc8068a12b881563f3
+2021-06-25 11:30:17.160 | INFO     | uvicorn.server:shutdown:242 - Shutting down
+2021-06-25 11:30:17.261 | INFO     | uvicorn.lifespan.on:shutdown:64 - Waiting for application shutdown.
+2021-06-25 11:30:17.262 | INFO     | uvicorn.lifespan.on:shutdown:75 - Application shutdown complete.
+2021-06-25 11:30:17.262 | INFO     | uvicorn.server:serve:75 - Finished server process [310415]
+2021-06-25 11:30:17.637 | INFO     | uvicorn.lifespan.on:startup:59 - Application startup complete.
+2021-06-25 11:37:26.082 | INFO     | uvicorn.server:shutdown:242 - Shutting down
+2021-06-25 11:37:26.183 | INFO     | uvicorn.lifespan.on:shutdown:64 - Waiting for application shutdown.
+2021-06-25 11:37:26.183 | INFO     | uvicorn.lifespan.on:shutdown:75 - Application shutdown complete.
+2021-06-25 11:37:26.183 | INFO     | uvicorn.server:serve:75 - Finished server process [310662]
+2021-06-25 11:38:26.999 | INFO     | uvicorn.lifespan.on:startup:59 - Application startup complete.
+2021-06-25 11:39:27.502 | INFO     | uvicorn.server:shutdown:242 - Shutting down
+2021-06-25 11:39:27.603 | INFO     | uvicorn.lifespan.on:shutdown:64 - Waiting for application shutdown.
+2021-06-25 11:39:27.603 | INFO     | uvicorn.lifespan.on:shutdown:75 - Application shutdown complete.
+2021-06-25 11:39:27.603 | INFO     | uvicorn.server:serve:75 - Finished server process [312028]
+2021-06-25 11:40:20.934 | INFO     | uvicorn.lifespan.on:startup:59 - Application startup complete.
+2021-06-25 11:40:27.207 | INFO     | main:init_resource:20 - GET /internal/polls/b39a47ba4cf140fc8068a12b881563f3 take 0.00s
+2021-06-25 11:44:15.906 | INFO     | uvicorn.server:shutdown:242 - Shutting down
+2021-06-25 11:44:16.007 | INFO     | uvicorn.lifespan.on:shutdown:64 - Waiting for application shutdown.
+2021-06-25 11:44:16.009 | INFO     | uvicorn.lifespan.on:shutdown:75 - Application shutdown complete.
+2021-06-25 11:44:16.010 | INFO     | uvicorn.server:serve:75 - Finished server process [312462]
+2021-06-25 11:44:16.383 | INFO     | uvicorn.lifespan.on:startup:59 - Application startup complete.
+2021-06-25 11:47:27.688 | INFO     | uvicorn.server:shutdown:242 - Shutting down
+2021-06-25 11:47:27.790 | INFO     | uvicorn.lifespan.on:shutdown:64 - Waiting for application shutdown.
+2021-06-25 11:47:27.792 | INFO     | uvicorn.lifespan.on:shutdown:75 - Application shutdown complete.
+2021-06-25 11:47:27.793 | INFO     | uvicorn.server:serve:75 - Finished server process [312926]
+2021-06-25 11:47:28.138 | INFO     | uvicorn.lifespan.on:startup:59 - Application startup complete.
+2021-06-25 11:47:30.447 | INFO     | uvicorn.server:shutdown:242 - Shutting down
+2021-06-25 11:47:30.550 | INFO     | uvicorn.lifespan.on:shutdown:64 - Waiting for application shutdown.
+2021-06-25 11:47:30.552 | INFO     | uvicorn.lifespan.on:shutdown:75 - Application shutdown complete.
+2021-06-25 11:47:30.553 | INFO     | uvicorn.server:serve:75 - Finished server process [313375]
+2021-06-25 17:06:54.459 | INFO     | uvicorn.lifespan.on:startup:59 - Application startup complete.
+2021-06-25 17:08:30.073 | INFO     | main:init_resource:20 - POST /internal/polls take 0.00s
+2021-06-25 17:08:54.258 | ERROR    | uvicorn.protocols.http.h11_impl:run_asgi:369 - Exception in ASGI application
+
+Traceback (most recent call last):
+
+  File "<string>", line 1, in <module>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               │     │   └ 4
+               │     └ 7
+               └ <function _main at 0x7fe0b0720160>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/multiprocessing/spawn.py", line 129, in _main
+    return self._bootstrap(parent_sentinel)
+           │    │          └ 4
+           │    └ <function BaseProcess._bootstrap at 0x7fe0b0876f70>
+           └ <SpawnProcess name='SpawnProcess-1' parent=349331 started>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+    │    └ <function BaseProcess.run at 0x7fe0b08765e0>
+    └ <SpawnProcess name='SpawnProcess-1' parent=349331 started>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {'config': <uvicorn.config.Config object at 0x7fe0b071c160>, 'target': <bound method Server.run of <uvicorn.server.Server obj...
+    │    │        │    │        └ <SpawnProcess name='SpawnProcess-1' parent=349331 started>
+    │    │        │    └ ()
+    │    │        └ <SpawnProcess name='SpawnProcess-1' parent=349331 started>
+    │    └ <function subprocess_started at 0x7fe0aff6c790>
+    └ <SpawnProcess name='SpawnProcess-1' parent=349331 started>
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/uvicorn/subprocess.py", line 76, in subprocess_started
+    target(sockets=sockets)
+    │              └ [<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000)>]
+    └ <bound method Server.run of <uvicorn.server.Server object at 0x7fe0b071c130>>
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/uvicorn/server.py", line 50, in run
+    loop.run_until_complete(self.serve(sockets=sockets))
+    │    │                  │    │             └ [<socket.socket fd=3, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 8000)>]
+    │    │                  │    └ <function Server.serve at 0x7fe0aff6dd30>
+    │    │                  └ <uvicorn.server.Server object at 0x7fe0b071c130>
+    │    └ <function BaseEventLoop.run_until_complete at 0x7fe0b02441f0>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/asyncio/base_events.py", line 629, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x7fe0b0244160>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x7fe0b0245ca0>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x7fe0b031b940>
+    └ <Handle <TaskStepMethWrapper object at 0x7fe0ad055ca0>()>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <TaskStepMethWrapper object at 0x7fe0ad055ca0>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <TaskStepMethWrapper object at 0x7fe0ad055ca0>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <TaskStepMethWrapper object at 0x7fe0ad055ca0>()>
+> File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 369, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+                   │   │    │      │    │        │    └ <function RequestResponseCycle.send at 0x7fe0afdf2160>
+                   │   │    │      │    │        └ <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fe0ad055c70>
+                   │   │    │      │    └ <function RequestResponseCycle.receive at 0x7fe0afdf21f0>
+                   │   │    │      └ <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fe0ad055c70>
+                   │   │    └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.1'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+                   │   └ <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fe0ad055c70>
+                   └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x7fe0afe85e80>
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 59, in __call__
+    return await self.app(scope, receive, send)
+                 │    │   │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fe0ad055c70>>
+                 │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fe0ad055c70>>
+                 │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.1'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+                 │    └ <fastapi.applications.FastAPI object at 0x7fe0afdf8700>
+                 └ <uvicorn.middleware.proxy_headers.ProxyHeadersMiddleware object at 0x7fe0afe85e80>
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+                           │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fe0ad055c70>>
+                           │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fe0ad055c70>>
+                           └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.1'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+          │    │                │      │        └ <bound method RequestResponseCycle.send of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fe0ad055c70>>
+          │    │                │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fe0ad055c70>>
+          │    │                └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.1'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x7fe0aeaca790>
+          └ <fastapi.applications.FastAPI object at 0x7fe0afdf8700>
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+          │    │   │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x7fe0ad059ee0>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fe0ad055c70>>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.1'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.base.BaseHTTPMiddleware object at 0x7fe0aeaca700>
+          └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x7fe0aeaca790>
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+          │    │   │      │        └ <function ServerErrorMiddleware.__call__.<locals>._send at 0x7fe0ad059ee0>
+          │    │   │      └ <bound method RequestResponseCycle.receive of <uvicorn.protocols.http.h11_impl.RequestResponseCycle object at 0x7fe0ad055c70>>
+          │    │   └ {'type': 'http', 'asgi': {'version': '3.0', 'spec_version': '2.1'}, 'http_version': '1.1', 'server': ('127.0.0.1', 8000), 'cl...
+          │    └ <starlette.middleware.base.BaseHTTPMiddleware object at 0x7fe0aeaca700>
+          └ <starlette.middleware.errors.ServerErrorMiddleware object at 0x7fe0aeaca790>
+  File "/home/danghh-1998/.local/share/virtualenvs/poll-vote-oKPYDc2g/lib/python3.9/site-packages/starlette/middleware/base.py", line 25, in __call__
+    response = await self.dispatch_func(request, self.call_next)
+                     │    │             │        │    └ <function BaseHTTPMiddleware.call_next at 0x7fe0af510310>
+                     │    │             │        └ <starlette.middleware.base.BaseHTTPMiddleware object at 0x7fe0aeaca700>
+                     │    │             └ <starlette.requests.Request object at 0x7fe0ad055820>
+                     │    └ <function init_resource at 0x7fe0aeacdee0>
+                     └ <starlette.middleware.base.BaseHTTPMiddleware object at 0x7fe0aeaca700>
+
+  File "/home/danghh-1998/Documents/poll-vote/./main.py", line 20, in init_resource
+    start_time = time()
+                 └ <built-in function time>
+
+  File "/home/danghh-1998/Documents/poll-vote/./main.py", line 20, in init_resource
+    start_time = time()
+                 └ <built-in function time>
+
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+           │    │             └ <frame at 0x7fe0ad083040, file '/home/danghh-1998/Documents/poll-vote/./main.py', line 20, code init_resource>
+           │    └ <function Bdb.dispatch_line at 0x7fe0ad0bcee0>
+           └ <pdb.Pdb object at 0x7fe0ad055d00>
+  File "/home/danghh-1998/anaconda3/envs/poll-vote/lib/python3.9/bdb.py", line 113, in dispatch_line
+    if self.quitting: raise BdbQuit
+       │    │               └ <class 'bdb.BdbQuit'>
+       │    └ True
+       └ <pdb.Pdb object at 0x7fe0ad055d00>
+
+bdb.BdbQuit
+2021-06-25 17:09:07.027 | INFO     | uvicorn.server:shutdown:242 - Shutting down
+2021-06-25 17:09:07.128 | INFO     | uvicorn.lifespan.on:shutdown:64 - Waiting for application shutdown.
+2021-06-25 17:09:07.129 | INFO     | uvicorn.lifespan.on:shutdown:75 - Application shutdown complete.
+2021-06-25 17:09:07.129 | INFO     | uvicorn.server:serve:75 - Finished server process [349333]
+2021-06-25 17:09:07.483 | INFO     | uvicorn.lifespan.on:startup:59 - Application startup complete.
+2021-06-25 17:09:50.725 | INFO     | main:init_resource:20 - POST /internal/polls take 0.00s
+2021-06-25 17:12:35.429 | INFO     | uvicorn.server:shutdown:242 - Shutting down
+2021-06-25 17:12:35.530 | INFO     | uvicorn.lifespan.on:shutdown:64 - Waiting for application shutdown.
+2021-06-25 17:12:35.530 | INFO     | uvicorn.lifespan.on:shutdown:75 - Application shutdown complete.
+2021-06-25 17:12:35.530 | INFO     | uvicorn.server:serve:75 - Finished server process [349595]
+2021-06-25 17:12:35.985 | INFO     | uvicorn.lifespan.on:startup:59 - Application startup complete.
+2021-06-25 17:13:12.122 | INFO     | uvicorn.server:shutdown:242 - Shutting down
+2021-06-25 17:13:12.223 | INFO     | uvicorn.lifespan.on:shutdown:64 - Waiting for application shutdown.
+2021-06-25 17:13:12.225 | INFO     | uvicorn.lifespan.on:shutdown:75 - Application shutdown complete.
+2021-06-25 17:13:12.226 | INFO     | uvicorn.server:serve:75 - Finished server process [350070]
+2021-06-25 17:13:12.588 | INFO     | uvicorn.lifespan.on:startup:59 - Application startup complete.
+2021-06-25 17:13:13.697 | INFO     | main:init_resource:20 - POST /internal/polls take 0.00s
+2021-06-25 17:13:25.140 | INFO     | uvicorn.server:shutdown:242 - Shutting down
+2021-06-25 17:13:25.241 | INFO     | uvicorn.lifespan.on:shutdown:64 - Waiting for application shutdown.
+2021-06-25 17:13:25.243 | INFO     | uvicorn.lifespan.on:shutdown:75 - Application shutdown complete.
+2021-06-25 17:13:25.244 | INFO     | uvicorn.server:serve:75 - Finished server process [350134]
+2021-06-25 17:13:25.625 | INFO     | uvicorn.lifespan.on:startup:59 - Application startup complete.
+2021-06-25 17:13:25.627 | INFO     | main:init_resource:20 - POST /internal/polls take 0.00s
+2021-06-25 17:14:17.117 | INFO     | uvicorn.server:shutdown:242 - Shutting down
+2021-06-25 17:14:17.217 | INFO     | uvicorn.lifespan.on:shutdown:64 - Waiting for application shutdown.
+2021-06-25 17:14:17.218 | INFO     | uvicorn.lifespan.on:shutdown:75 - Application shutdown complete.
+2021-06-25 17:14:17.218 | INFO     | uvicorn.server:serve:75 - Finished server process [350214]
+2021-06-25 17:14:17.581 | INFO     | uvicorn.lifespan.on:startup:59 - Application startup complete.
+2021-06-25 17:16:00.554 | INFO     | uvicorn.server:shutdown:242 - Shutting down
+2021-06-25 17:16:00.654 | INFO     | uvicorn.lifespan.on:shutdown:64 - Waiting for application shutdown.
+2021-06-25 17:16:00.655 | INFO     | uvicorn.lifespan.on:shutdown:75 - Application shutdown complete.
+2021-06-25 17:16:00.655 | INFO     | uvicorn.server:serve:75 - Finished server process [350280]
+2021-06-25 17:46:47.073 | INFO     | uvicorn.lifespan.on:startup:59 - Application startup complete.
+2021-06-25 17:46:53.254 | INFO     | main:init_resource:21 - POST /internal/polls take 0.00s
+2021-06-25 17:49:16.435 | INFO     | main:init_resource:21 - POST /internal/polls/ take 143.18s
+2021-06-25 17:49:16.436 | INFO     | uvicorn.server:shutdown:242 - Shutting down
+2021-06-25 17:49:16.537 | INFO     | uvicorn.lifespan.on:shutdown:64 - Waiting for application shutdown.
+2021-06-25 17:49:16.537 | INFO     | uvicorn.lifespan.on:shutdown:75 - Application shutdown complete.
+2021-06-25 17:49:16.538 | INFO     | uvicorn.server:serve:75 - Finished server process [356271]
+2021-06-25 17:49:16.902 | INFO     | uvicorn.lifespan.on:startup:59 - Application startup complete.
+2021-06-25 17:49:20.402 | INFO     | main:init_resource:21 - POST /internal/polls take 0.00s
+2021-06-25 17:49:43.319 | INFO     | main:init_resource:21 - POST /internal/polls/ take 22.92s
+2021-06-25 17:51:50.028 | INFO     | uvicorn.server:shutdown:242 - Shutting down
+2021-06-25 17:51:50.129 | INFO     | uvicorn.lifespan.on:shutdown:64 - Waiting for application shutdown.
+2021-06-25 17:51:50.130 | INFO     | uvicorn.lifespan.on:shutdown:75 - Application shutdown complete.
+2021-06-25 17:51:50.131 | INFO     | uvicorn.server:serve:75 - Finished server process [356545]
+2021-06-25 17:51:50.509 | INFO     | uvicorn.lifespan.on:startup:59 - Application startup complete.
+2021-06-25 17:52:57.865 | INFO     | uvicorn.server:shutdown:242 - Shutting down
+2021-06-25 17:52:57.967 | INFO     | uvicorn.lifespan.on:shutdown:64 - Waiting for application shutdown.
+2021-06-25 17:52:57.968 | INFO     | uvicorn.lifespan.on:shutdown:75 - Application shutdown complete.
+2021-06-25 17:52:57.969 | INFO     | uvicorn.server:serve:75 - Finished server process [357051]
