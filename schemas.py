@@ -52,10 +52,9 @@ class PollCreate(BaseModel):
     title: str = Field(..., min_length=config.STRING_LENGTH.start, max_length=config.STRING_LENGTH.stop)
     allow_add_choice: bool = Field(default=True)
     allow_multiple_choice: bool = Field(default=True)
-    creator_id: str = Field(...)
     type: str = Field(...)
     votes: List[Vote] = Field(..., min_items=config.VOTE_LIMIT.start, max_items=config.VOTE_LIMIT.stop)
-    end_at: Optional[int]
+    end_at: Optional[int] = None
 
     type_validator = validator('type', allow_reuse=True)(validate_type)
     end_at_validator = validator('end_at', allow_reuse=True)(validate_end_at)

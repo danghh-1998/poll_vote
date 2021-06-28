@@ -6,6 +6,7 @@ from gapoic.app_config import load_config_as_class
 
 class AppConfig(BaseModel):
     DB_HOST: str
+    DB_PORT: str
     DB_USER: str
     DB_PASSWORD: str
     DB_NAME: str
